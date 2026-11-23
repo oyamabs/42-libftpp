@@ -28,4 +28,7 @@ public:
 		~Object();
 		T* operator->();
 	};
+
+	template <typename... TArgs>
+	Object acquire(TArgs&&... p_args);
 };
